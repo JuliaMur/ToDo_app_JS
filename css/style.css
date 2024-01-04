@@ -1,0 +1,69 @@
+/* Colors */
+/* Mixins */
+body {
+  font-family: sans-serif;
+  color: cyan;
+  margin: 0 auto;
+  background-color: #253e5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: #122031;
+  width: 300px;
+  height: 500px;
+  border: 5px solid cyan;
+  border-radius: 8px;
+  padding: 5px;
+  overflow-y: scroll;
+}
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+.app #addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(95, 223, 255, 0.35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.app .fa-plus {
+  background-color: cyan;
+  color: #122031;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  gap: 15px;
+}
+#tasks div {
+  background-color: rgba(96, 218, 255, 0.13);
+  border: 3px solid cyan;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 3px;
+}
+#tasks div .options {
+  padding: 5px;
+  justify-self: center;
+  display: flex;
+  gap: 10px;
+}
+#tasks div i {
+  cursor: pointer;
+}
+
+form {
+  color: black;
+}
+form #msg {
+  color: red;
+}/*# sourceMappingURL=main.css.map */

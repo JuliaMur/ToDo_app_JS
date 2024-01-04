@@ -1,0 +1,71 @@
+@import "variables";
+
+body{
+    font-family: sans-serif;
+    color: $primary-color;
+    margin: 0 auto;
+    background-color: $bg-color-body;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .app{
+    background-color: $bg-color-form;
+    width: 300px;
+    height: 500px;
+    border: 5px solid $primary-color;
+    border-radius: 8px;
+    padding: 5px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        width: 0 !important;
+    }
+
+    #addNew{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $bg-color-text-intup;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+      }
+      .fa-plus{
+        background-color: $primary-color;
+        color: $bg-color-form;
+        padding: 3px;
+        border-radius: 3px;
+      }
+  }
+
+  #tasks{
+    @include display(grid, 15px);
+    & div{
+        background-color: $bg-color-text-output;
+        border: 3px solid $primary-color;
+        border-radius: 6px;
+        padding: 5px;
+        @include display(grid, 3px);
+        
+        .options{
+            padding: 5px;
+            justify-self: center;
+            @include display(flex, 10px);
+            }
+            & i{
+                cursor: pointer;
+            }
+        }
+    }
+
+  form{
+    color: black;
+        #msg{
+            color: red;
+        }
+      }
+
+    

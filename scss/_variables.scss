@@ -1,0 +1,16 @@
+/* Colors */
+
+$primary-color: cyan;
+$bg-color-body:#253e5c;
+$bg-color-form:#122031;
+$msg-color: red;
+$form-font-color: black;
+$bg-color-text-intup: rgba(95, 223, 255, 0.35);
+$bg-color-text-output:rgba(96, 218, 255, 0.13);
+
+/* Mixins */
+
+@mixin display($display, $gap){
+    display: $display;
+    gap: $gap;
+}
